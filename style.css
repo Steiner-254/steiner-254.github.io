@@ -1,66 +1,103 @@
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #e3f2fd;
     color: #333;
-  }
-  
-  header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-  }
-  
-  section {
-    margin: 20px;
-  }
-  
-  h1, h2, h3 {
-    color: #333;
-  }
-  
-  .container {
-    max-width: 1000px;
-    margin: auto;
-  }
-  
-  .projects {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-  }
-  
-  .project {
-    flex: 1;
-    min-width: 250px;
-    background: white;
-    padding: 20px;
-    border: 1px solid #ddd;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  p {
     line-height: 1.6;
   }
   
-  footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: #333;
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header */
+  header {
+    background-color: #0d47a1;
     color: white;
+    padding: 20px 0;
+    text-align: center;
   }
   
-  /* Styles for the new sections */
-  h3 {
-    font-size: 1.2em;
-    color: #444;
-    margin-top: 15px;
+  header h1 {
+    font-size: 2.5rem;
+    margin: 0;
   }
   
-  h3 + p {
+  .tagline {
+    font-size: 1.2rem;
     font-style: italic;
+    margin-top: 10px;
+    color: #90caf9;
+  }
+  
+  /* About Section */
+  .about h2, .projects h2 {
+    font-size: 2rem;
+    color: #0d47a1;
+    margin-bottom: 10px;
+  }
+  
+  .about p {
+    font-size: 1.1rem;
     color: #555;
   }
-
+  
+  /* Projects Section */
+  .projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .project {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 20px);
+    min-width: 250px;
+  }
+  
+  .project h3 {
+    color: #1976d2;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .project p {
+    color: #616161;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #0d47a1;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .projects-grid {
+      flex-direction: column;
+    }
+  
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    .about h2, .projects h2 {
+      font-size: 1.5rem;
+    }
+  }
+  
