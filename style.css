@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  section {
+    margin: 20px;
+  }
+  
+  h1, h2, h3 {
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .project {
+    flex: 1;
+    min-width: 250px;
+    background: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  p {
+    line-height: 1.6;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+  }
+  
+  /* Styles for the new sections */
+  h3 {
+    font-size: 1.2em;
+    color: #444;
+    margin-top: 15px;
+  }
+  
+  h3 + p {
+    font-style: italic;
+    color: #555;
+  }
+
