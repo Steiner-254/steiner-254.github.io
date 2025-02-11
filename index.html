@@ -1,62 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Steiner254's Portfolio</title>
-  <!-- Link to external CSS -->
-  <link rel="stylesheet" href="style.css">
-  <!-- Google Fonts for better typography -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alvin Mwambi (@Steiner254) | Portfolio</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- AOS Animation CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-
-<header>
-  <div class="container">
-    <h1>Welcome to My Portfolio</h1>
-    <p class="tagline">Securing the Internet, One Hack at a Time</p>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader"></div>
   </div>
-</header>
 
-<section class="about container">
-  <h2>About Me</h2>
-  <p>Hi, I'm <strong>Steiner254</strong>, a hacker since birth. I'm passionate about cracking and securing the internet. Welcome to my portfolio where you can learn about my work in blockchain security, app security, and penetration testing.</p>
+  <!-- Custom Cursor -->
+  <div id="custom-cursor"></div>
 
-  <h3>🔭 I’m currently working on:</h3>
-  <p>Blockchain Security & Development || Application Security || Penetration Testing</p>
+  <!-- Particle Background -->
+  <div id="particles-js"></div>
 
-  <h3>👯 I’m looking to collaborate on:</h3>
-  <p>Smart Contract Development & Auditing || Web & Android Development || Penetration Testing</p>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <a href="#" class="logo">Alvin Mwambi (@Steiner254)</a>
+        <ul class="nav-menu">
+          <li><a href="#about">Who Am I?</a></li>
+          <li><a href="#experience">Work & Experience</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#education">Certifications</a></li>
+          <li><a href="#skills">Skills & Tools</a></li>
+          <li><a href="#blog">My Blog</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-  <h3>💬 Ask me about:</h3>
-  <p>Blockchain Security & Development || Application Security || Penetration Testing</p>
-
-  <h3>⚡ Fun fact:</h3>
-  <p>Blockchain Security Expert - I'm Watching The Downfall Of Central Banks!</p>
-</section>
-
-<section class="projects container">
-  <h2>My Projects</h2>
-  <div class="projects-grid">
-    <div class="project">
-      <h3>Hack 1</h3>
-      <p>Description of Hack 1: Focused on penetration testing and improving system security.</p>
+  <!-- About Section -->
+  <section id="about" class="about-section" data-aos="fade-in">
+    <div class="container">
+      <!-- Profile Image -->
+      <img src="images/image.jpg" alt="Profile Image" class="profile-img">
+      <h1># &lt;Who Am I?/&gt;</h1>
+      <h3>I am Alvin Mwambi (@Steiner254)</h3>
+      <p>
+        I am a professional with expertise in Web Application Security, Mobile Security, Network Security, Cloud Security, Web Development, Penetration Testing, Source Code Reviewing, and Technical Writing. I also specialize in Smart Contract Development, Auditing, and DevSecOps. As a proactive Application Security Researcher, I safeguard companies from cyber threats by identifying and resolving vulnerabilities.
+      </p>
+      <!-- Dynamic Typed Text -->
+      <div id="typed-text"></div>
+      <div class="social-links">
+        <a href="https://twitter.com/steiner254" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/steiner254" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Steiner-254" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="mailto:steiner254@xyseclabs.com"><i class="fas fa-envelope"></i></a>
+      </div>
     </div>
-    <div class="project">
-      <h3>Hack 2</h3>
-      <p>Description of Hack 2: A dive into application security and exploit testing.</p>
-    </div>
-    <div class="project">
-      <h3>Hack 3</h3>
-      <p>Description of Hack 3: A deep analysis of smart contract vulnerabilities and auditing.</p>
-    </div>
-  </div>
-</section>
+  </section>
 
-<footer>
-  <p>© 2024 Steiner254. Securing the Future, One Byte at a Time.</p>
-</footer>
+  <!-- Work & Experience Section -->
+  <section id="experience" class="experience-section" data-aos="fade-up">
+    <div class="container">
+      <h1># &lt;Work & Experience/&gt;</h1>
+      <div class="experience-cards">
+        <!-- Each card includes the image "image.jpg" -->
+        <div class="card" data-aos="zoom-in" data-aos-delay="100">
+          <img src="images/image.jpg" alt="Experience Image">
+          <h3>Hindsight VIP</h3>
+          <p>Blockchain Security Auditor</p>
+        </div>
+        <div class="card" data-aos="zoom-in" data-aos-delay="200">
+          <img src="images/image.jpg" alt="Experience Image">
+          <h3>Varonis Systems</h3>
+          <p>Cybersecurity Engineer | Technical Writer</p>
+        </div>
+        <div class="card" data-aos="zoom-in" data-aos-delay="300">
+          <img src="images/image.jpg" alt="Experience Image">
+          <h3>Dairah Tech Solutions</h3>
+          <p>Penetration Tester</p>
+        </div>
+        <div class="card" data-aos="zoom-in" data-aos-delay="400">
+          <img src="images/image.jpg" alt="Experience Image">
+          <h3>SwyptIO</h3>
+          <p>Blockchain/Web2 DevSecOps</p>
+        </div>
+        <div class="card" data-aos="zoom-in" data-aos-delay="500">
+          <img src="images/image.jpg" alt="Experience Image">
+          <h3>Digital Jewels Limited</h3>
+          <p>Cybersecurity Auditor & Penetration Tester</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Achievements & Recognitions Section -->
+  <section id="achievements" class="achievements-section" data-aos="fade-up">
+    <div class="container">
+      <h1># &lt;Achievements & Recognitions/&gt;</h1>
+      <ul class="achievements-list">
+        <li>Acknowledged by United Nations (UN)</li>
+        <li>Acknowledged by Huawei</li>
+        <li>Acknowledged by The University of Texas</li>
+        <li>Acknowledged by Utrecht University</li>
+        <li>Acknowledged by Juspay – Mobile Banking</li>
+        <li>Acknowledged by Sendy</li>
+        <li>Acknowledged by Prinsesmaximacentrum</li>
+        <li>Acknowledged by Cision</li>
+        <li>Acknowledged by Xsolla (2022)</li>
+        <li>Acknowledged by Sendyit</li>
+        <li>Acknowledged by Spectrocloud</li>
+        <li>Acknowledged by Bright Data</li>
+        <li>Acknowledged by StarLeaf</li>
+        <li>Acknowledged by Upstox</li>
+        <li>Acknowledged by Helcim</li>
+        <li>Acknowledged by Agicap</li>
+        <li>Acknowledged by Eset</li>
+        <li>Acknowledged by Rocketlane</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Education & Certifications Section -->
+  <section id="education" class="education-section" data-aos="fade-up">
+    <div class="container">
+      <h1># &lt;Certifications/&gt;</h1>
+      <div class="certifications">
+        <h3>Certifications & Courses</h3>
+        <ul>
+          <li>WordSkills Kenya National Competition & Innovation 2024 (1st Position – Cyber Security)</li>
+          <li>Nafasi Connection Security Bug Bash Bounty Challenge – Meetamore (1st Position, 16th August 2024)</li>
+          <li>Africahackon Masterclass Trainer – 2023</li>
+          <li>Safaricom/SheHacks KE Hackfest Kenya Speaker – 2023 (Blockchain Security)</li>
+          <li>CyberTalents Certified Threat Hunter</li>
+          <li>CyberTalents Certified SOC Analyst</li>
+          <li>Pentesterlab Badges</li>
+          <li>Currently Studying CEH – Certified Ethical Hacker Certification</li>
+          <li>Currently Studying BSCP – Burp Suite Certified Practitioner</li>
+          <li>Currently Studying AWS re/Start – Ajira Digital Bootcamp</li>
+          <li>Currently Studying Cyfrin Updraft – Full Blockchain Development & Security Course</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills & Tools Section -->
+  <section id="skills" class="skills-section" data-aos="fade-up">
+    <div class="container">
+      <h1># &lt;Skills & Tools/&gt;</h1>
+      <div class="skills-grid">
+        <!-- Each skill item now includes an icon image -->
+        <div class="skill-item" data-aos="flip-left" data-aos-delay="100">
+          <img src="images/image.jpg" alt="Skill Icon">
+          <p><strong>Cybersecurity:</strong> Web App Security, Mobile Security, Network Security, Cloud Security, Penetration Testing, Source Code Reviewing, Technical Writing</p>
+        </div>
+        <div class="skill-item" data-aos="flip-left" data-aos-delay="200">
+          <img src="images/image.jpg" alt="Skill Icon">
+          <p><strong>Programming:</strong> HTML5, CSS, JavaScript, C, C++, PHP, Java, Python, Bash, Go, SQL, Solidity, Rust, Ruby, Visual Basic</p>
+        </div>
+        <div class="skill-item" data-aos="flip-left" data-aos-delay="300">
+          <img src="images/image.jpg" alt="Skill Icon">
+          <p><strong>Frameworks:</strong> Laravel, Ruby on Rails, Django, Flask, Express.js, React.js, Angular</p>
+        </div>
+        <div class="skill-item" data-aos="flip-left" data-aos-delay="400">
+          <img src="images/image.jpg" alt="Skill Icon">
+          <p><strong>Databases:</strong> Relational, Object-oriented, Hierarchical, Network</p>
+        </div>
+        <div class="skill-item" data-aos="flip-left" data-aos-delay="500">
+          <img src="images/image.jpg" alt="Skill Icon">
+          <p><strong>Server Technologies:</strong> Web, Proxy, FTP, Application, File, Database, Mail Servers, Virtual Machines</p>
+        </div>
+        <div class="skill-item" data-aos="flip-left" data-aos-delay="600">
+          <img src="images/image.jpg" alt="Skill Icon">
+          <p><strong>Blockchain/Web3:</strong> Ethereum, Binance, AWS/Azure Nodes, Filecoin, Swarm, Chainlink, OpenZeppelin</p>
+        </div>
+        <div class="skill-item" data-aos="flip-left" data-aos-delay="700">
+          <img src="images/image.jpg" alt="Skill Icon">
+          <p><strong>Operating Systems:</strong> Windows, Linux (Kali, Parrot, Ubuntu, Linux Mint, Black Arch)</p>
+        </div>
+        <div class="skill-item" data-aos="flip-left" data-aos-delay="800">
+          <img src="images/image.jpg" alt="Skill Icon">
+          <p><strong>Additional:</strong> Hardware troubleshooting, Installation & Maintenance, MS Office Suite</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog" class="blog-section" data-aos="fade-up">
+    <div class="container">
+      <h1># &lt;My Blog/&gt;</h1>
+      <div class="blog-posts">
+        <!-- Dynamic blog posts will be injected by JS (each post uses image.jpg) -->
+      </div>
+      <div class="more-posts" data-aos="fade-up">
+        <a href="https://medium.com/@Steiner254" target="_blank" class="view-more">View More Posts on Medium</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section" data-aos="fade-up">
+    <div class="container">
+      <h1># &lt;Contact Me/&gt;</h1>
+      <h3>Let's talk about cybersecurity & blockchain innovation!</h3>
+      <p>Don't like forms? <a href="mailto:steiner254@xyseclabs.com">Drop me an email</a>.</p>
+      <div class="contact-info">
+        <p><i class="fas fa-envelope"></i> <a href="mailto:steiner254@xyseclabs.com">steiner254@xyseclabs.com</a></p>
+        <p><i class="fas fa-phone"></i> +254742783256</p>
+        <p><i class="fas fa-map-marker-alt"></i> P. O. Box 89044, Area 51</p>
+      </div>
+      <div class="social-links">
+        <a href="https://twitter.com/steiner254" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/steiner254" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Steiner-254" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scroll-to-Top Button -->
+  <button id="scrollToTop"><i class="fas fa-chevron-up"></i></button>
+
+  <!-- Footer -->
+  <footer data-aos="fade-in">
+    <div class="container">
+      <p>&copy; 2025. Made with ❤️ by Alvin Mwambi (@Steiner254).</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript Libraries -->
+  <!-- AOS Animation Library -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <!-- Typed.js for dynamic text -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <!-- Particles.js for background effects -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/script.js"></script>
+  <script>
+    // Initialize AOS and Particles from inline settings
+    AOS.init({ duration: 1000, once: true });
+    particlesJS("particles-js", {
+      "particles": {
+        "number": { "value": 60, "density": { "enable": true, "value_area": 800 } },
+        "color": { "value": "#ffffff" },
+        "shape": { "type": "circle" },
+        "opacity": { "value": 0.5, "random": false },
+        "size": { "value": 3, "random": true },
+        "line_linked": { "enable": true, "distance": 150, "color": "#ffffff", "opacity": 0.4, "width": 1 },
+        "move": { "enable": true, "speed": 2, "direction": "none", "random": false, "straight": false, "out_mode": "out" }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": { "onhover": { "enable": true, "mode": "grab" } },
+        "modes": { "grab": { "distance": 200, "line_linked": { "opacity": 1 } } }
+      },
+      "retina_detect": true
+    });
+  </script>
 </body>
 </html>
