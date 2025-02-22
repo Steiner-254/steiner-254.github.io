@@ -22,7 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
     navMenu.classList.toggle("active");
   });
 
-  // Close mobile menu when a nav link is clicked
   document.querySelectorAll(".nav-menu a").forEach(link => {
     link.addEventListener("click", function () {
       if (navMenu.classList.contains("active")) {
@@ -47,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   /*===============================================
     Intersection Observer for Active Nav Links
-  ================================================*/
+  ===============================================*/
   const sections = document.querySelectorAll("section");
   const observerOptions = { root: null, threshold: 0.3 };
 
@@ -77,7 +76,6 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       scrollBtn.classList.remove("show");
     }
-    // Change background dynamically on scroll
     if (window.scrollY > 100) {
       document.body.classList.add("dynamic-bg");
     } else {
@@ -110,6 +108,7 @@ document.addEventListener("DOMContentLoaded", function () {
   /*====================================================
     Dynamic Blog Posts Loading from JSON Array
   ====================================================*/
+  // Update the JSON array to include as many posts as needed.
   const blogPosts = [
     {
       title: "Exploring Cybersecurity Trends in 2023",
@@ -122,14 +121,40 @@ document.addEventListener("DOMContentLoaded", function () {
       date: "Nov 05, 2023",
       image: "images/image.jpg",
       link: "https://medium.com/@Steiner254"
+    },
+    {
+      title: "Understanding Web Security",
+      date: "Dec 01, 2023",
+      image: "images/image.jpg",
+      link: "https://medium.com/@Steiner254/web-security"
+    },
+    {
+      title: "Penetration Testing Basics",
+      date: "Dec 10, 2023",
+      image: "images/image.jpg",
+      link: "https://medium.com/@Steiner254/penetration-testing"
+    },
+    {
+      title: "Blockchain Security Explained",
+      date: "Dec 15, 2023",
+      image: "images/image.jpg",
+      link: "https://medium.com/@Steiner254/blockchain-security"
+    },
+    {
+      title: "Data Privacy & Compliance",
+      date: "Dec 20, 2023",
+      image: "images/image.jpg",
+      link: "https://medium.com/@Steiner254/data-privacy"
     }
   ];
+
   const blogContainer = document.querySelector(".blog-posts");
-  if (blogContainer) {
-    blogContainer.innerHTML = "";
+  // Only load dynamic posts if no static posts exist.
+  if (blogContainer && blogContainer.children.length === 0) {
     blogPosts.forEach((post, index) => {
       const postArticle = document.createElement("article");
-      postArticle.classList.add("post");
+      postArticle.classList.add("blog-post");
+      // Alternate animation directions based on index
       postArticle.setAttribute("data-aos", index % 2 === 0 ? "fade-right" : "fade-left");
       postArticle.innerHTML = `
         <img src="${post.image}" alt="${post.title}">
@@ -141,19 +166,20 @@ document.addEventListener("DOMContentLoaded", function () {
       `;
       blogContainer.appendChild(postArticle);
     });
+  } else if (blogContainer) {
+    console.log("Static blog posts are present. Skipping dynamic blog post injection.");
   }
 
   /*=======================
     Custom Cursor Effect
   ========================*/
   const customCursor = document.getElementById("custom-cursor");
-
   window.addEventListener("mousemove", function (e) {
     customCursor.style.left = e.clientX + "px";
     customCursor.style.top = e.clientY + "px";
   });
 
-  document.querySelectorAll("a, button, .card, .skill-item").forEach(el => {
+  document.querySelectorAll("a, button, .blog-post, .skill-item").forEach(el => {
     el.addEventListener("mouseenter", () => {
       customCursor.style.transform = "translate(-50%, -50%) scale(2)";
       customCursor.style.backgroundColor = "rgba(30,60,114,0.2)";
