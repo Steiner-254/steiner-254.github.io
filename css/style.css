@@ -445,3 +445,99 @@ body.dynamic-bg {
   background: linear-gradient(135deg, #1e3c72, #2a5298);
   transition: background 0.5s ease;
 }
+
+
+/* Updating The Achievements & Bug Bounty Section */
+/* Achievements Section Styles */
+.achievements-section {
+  padding: 60px 0;
+  background: #f8f9fa;
+  text-align: center;
+}
+
+/* Container for the Achievements Grid */
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  padding: 20px;
+  justify-content: center;
+}
+
+/* Individual Achievement Items */
+.achievement-item {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Achievement Item Hover Effect */
+.achievement-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Achievement Logos */
+.achievement-item img {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease-in-out;
+}
+
+.achievement-item:hover img {
+  transform: scale(1.1);
+}
+
+/* Achievement Text */
+.achievement-item p {
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Reference Link */
+.reference-link {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.reference-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .achievements-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+  }
+
+  .achievement-item {
+    padding: 15px;
+  }
+
+  .achievement-item img {
+    width: 80px;
+  }
+
+  .achievement-item p {
+    font-size: 14px;
+  }
+
+  .reference-link {
+    font-size: 12px;
+  }
+}
